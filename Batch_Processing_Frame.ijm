@@ -11,6 +11,6 @@ length = lengthOf(FileArray);
 for (i = 0; i < length; i++) {
 	open(OriginDir+"/"+FileArray[i]);
 	run("Invert");
-	saveAs("Tiff", SaveDir+FileArray[i]+".tiff");
+	saveAs("BMP", SaveDir+FileArray[i]);
 	close();
 }
