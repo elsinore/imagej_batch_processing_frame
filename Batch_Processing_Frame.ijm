@@ -1,12 +1,12 @@
-title = "Choose The Directory for Import Images";
-  msg = "Please choose the directory contains your image";
+title = "The Directory for Import Images";
+  msg = "The directory contains your image";
   waitForUser(title, msg);
-OriginDir = getDirectory("Choose a Directory");
+OriginDir = getDirectory("Directory of images");
 FileArray = getFileList(OriginDir);
-title = "Choose The Directory for Save";
-  msg = "Please choose the directory to save your image";
+title = "The Directory for Saving Results";
+  msg = "The directory to save results";
   waitForUser(title, msg);
-SaveDir = getDirectory("Choose a Directory");
+SaveDir = getDirectory("Directory for saving results");
 length = lengthOf(FileArray);
 for (i = 0; i < length; i++) {
 	open(OriginDir+"/"+FileArray[i]);
